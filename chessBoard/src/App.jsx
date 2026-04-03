@@ -10,7 +10,7 @@ function App() {
         <div style={{display: "flex"}} key={i}>
              {Array.from({length:size}).map((_,j)=>{
               let isBlack = (i+j)%2? 0:1;
-             return <div style={{width:"40px", height: "40px", backgroundColor: isBlack?"white":"black"}} key={j}></div>
+             return <div style={{width:"40px", height: "40px", backgroundColor: isBlack?"white":"black", flex:"1"}} key={j}></div>
              })}  
         </div>
       ))}
